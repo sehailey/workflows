@@ -11,5 +11,10 @@
     "url": "?.git"
   },
   "author": "notnull",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
