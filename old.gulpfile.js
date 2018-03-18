@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
-    coffee = require('gulp-coffee'),
+    log = require('fancy-log'),
     browserify = require('gulp-browserify'),
+    coffee = require('gulp-coffee'),
     concat = require('gulp-concat');
 
 var coffeeSources = ['components/coffee/tagline.coffee'];
@@ -15,7 +15,7 @@ var jsSources = [
 gulp.task('coffee', function() {
   gulp.src(coffeeSources)
     .pipe(coffee({ bare: true })
-      .on('error', gutil.log))
+      .on('error', log()))
     .pipe(gulp.dest('components/scripts'))
 });
 
