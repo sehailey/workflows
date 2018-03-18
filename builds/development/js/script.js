@@ -73,6 +73,16 @@ var pixgrid = function() {
     }
 }();
 
+var $, fill;
+
+$ = require`jquery`;
+
+(fill = function(item) {
+  return $('tagline').append(`${item}`);
+})('Creative minds in Art');
+
+fill;
+
 $(function() {
   var Mustache = require('mustache');
 
